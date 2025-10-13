@@ -8,7 +8,7 @@ import LogoutButton from './logoutButton'
 
 
 function Header() {
-    const user = null
+    const user = 1
   return (
     <header className='relative flex h-24 w-full items-center justify-between bg-popover px-3 sm:px-8 '
     style={{
