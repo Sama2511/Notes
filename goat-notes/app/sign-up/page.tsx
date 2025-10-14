@@ -1,6 +1,6 @@
 import { Card, CardHeader, CardTitle } from '@/components/ui/card'
 import React from 'react'
-import AuthForm from '@/components/ui/AuthForm' 
+import AuthForm from '@/components/AuthForm' 
 
 function signUpPage() {
   return (

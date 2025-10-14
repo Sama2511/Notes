@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { Button } from './button'
+import { Button } from './ui/button'
 import { Loader2 } from 'lucide-react'
 import { useSonner, toast } from 'sonner'
 import { useRouter } from 'next/navigation'

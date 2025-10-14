@@ -3,11 +3,11 @@
 import { useRouter } from 'next/navigation'
 import React, { useTransition } from 'react'
 import { useSonner, toast } from 'sonner'
-import { CardContent, CardFooter } from './card'
-import { Label } from './label'
-import { Input } from './input'
+import { CardContent, CardFooter } from './ui/card'
+import { Label } from './ui/label'
+import { Input } from './ui/input'
 import { Loader2 } from 'lucide-react'
-import { Button } from './button'
+import { Button } from './ui/button'
 import Link from 'next/link'
 import { loginAction, signUpAction } from '@/action/user'
 
@@ -27,6 +27,7 @@ function AuthForm({type}:Props) {
             let errorMessage
             let title
             let description
+            
             if(isLoginForm){
                 errorMessage= (await loginAction(email, password)).errorMessage
                 title = "logged in"
